@@ -1,6 +1,7 @@
 {
   "expo": {
     "name": "SkillBridge",
+    "scheme": "my-SkillBridge",
     "slug": "SkillBridge",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -18,6 +19,8 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.SkillBridge.SkillBridge",
+      "versionCode": 1,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
@@ -25,6 +28,23 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "28c1fbb1-d423-4f44-ae13-3c0a8ba0a44c"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/28c1fbb1-d423-4f44-ae13-3c0a8ba0a44c"
     }
   }
 }
